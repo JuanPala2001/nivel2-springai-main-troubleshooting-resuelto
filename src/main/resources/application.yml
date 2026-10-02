@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: nivel2-springai
+
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        options:
+          model: llama3.2:1b
+          temperature: 0.7
+          max-tokens: 512
+
+server:
+  port: 8080
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    com.universidad: INFO
